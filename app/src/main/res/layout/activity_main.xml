@@ -102,48 +102,48 @@
         style="@style/Widget.housePoints.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/gPoints"
         android:textColor="#fec300"
         app:layout_constraintBottom_toBottomOf="@id/gryffindor"
         app:layout_constraintEnd_toEndOf="@id/gryffindor"
         app:layout_constraintStart_toStartOf="@id/gryffindor"
-        app:layout_constraintTop_toTopOf="@id/gryffindor" />
+        app:layout_constraintTop_toTopOf="@id/gryffindor"
+        tools:text="@string/gPoints" />
 
     <TextView
         android:id="@+id/sPoints"
         style="@style/Widget.housePoints.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sPoints"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="@id/slytherin"
         app:layout_constraintEnd_toEndOf="@id/slytherin"
         app:layout_constraintStart_toStartOf="@id/slytherin"
-        app:layout_constraintTop_toTopOf="@id/slytherin" />
+        app:layout_constraintTop_toTopOf="@id/slytherin"
+        tools:text="@string/sPoints" />
 
     <TextView
         android:id="@+id/rPoints"
         style="@style/Widget.housePoints.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/rPoints"
         android:textColor="#efa83c"
         app:layout_constraintBottom_toBottomOf="@id/ravenclaw"
         app:layout_constraintEnd_toEndOf="@id/ravenclaw"
         app:layout_constraintStart_toStartOf="@id/ravenclaw"
-        app:layout_constraintTop_toTopOf="@id/ravenclaw" />
+        app:layout_constraintTop_toTopOf="@id/ravenclaw"
+        tools:text="@string/rPoints" />
 
     <TextView
         android:id="@+id/hPoints"
         style="@style/Widget.housePoints.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hPoints"
         android:textColor="#e6bc0a"
         app:layout_constraintBottom_toBottomOf="@id/hufflepuff"
         app:layout_constraintEnd_toEndOf="@id/hufflepuff"
         app:layout_constraintStart_toStartOf="@id/hufflepuff"
-        app:layout_constraintTop_toTopOf="@id/hufflepuff" />
+        app:layout_constraintTop_toTopOf="@id/hufflepuff"
+        tools:text="@string/hPoints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

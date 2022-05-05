@@ -5,8 +5,8 @@
     <string name="sub5">-5</string>
     <string name="add10">+10</string>
     <string name="sub10">-10</string>
-    <string name="gPoints">gPoints</string>
-    <string name="sPoints">sPoints</string>
-    <string name="rPoints">rPoints</string>
-    <string name="hPoints">hPoints</string>
+    <string name="gPoints">%s</string>
+    <string name="sPoints">%s</string>
+    <string name="rPoints">%s</string>
+    <string name="hPoints">%s</string>
 </resources>
