@@ -8,53 +8,53 @@
 
     <TextView
         android:id="@+id/housePointCalc"
+        style="@style/Widget.housePoints.TextView.Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:text="@string/housePointsCalc"
-        android:textAlignment="center"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/gryffindor"
         android:layout_width="210dp"
         android:layout_height="210dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@id/slytherin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/housePointCalc"
-        app:layout_constraintEnd_toStartOf="@id/slytherin"
-        android:padding="10dp"
         app:srcCompat="@drawable/gryffindor" />
 
     <ImageView
         android:id="@+id/slytherin"
         android:layout_width="210dp"
         android:layout_height="210dp"
-        app:layout_constraintStart_toEndOf="@id/gryffindor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/housePointCalc"
         android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gryffindor"
+        app:layout_constraintTop_toBottomOf="@id/housePointCalc"
         app:srcCompat="@drawable/slytherin" />
 
     <ImageView
         android:id="@+id/ravenclaw"
-        app:layout_constraintTop_toBottomOf="@id/gryffindor"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/hufflepuff"
         android:layout_width="210dp"
         android:layout_height="210dp"
         android:padding="10dp"
+        app:layout_constraintEnd_toStartOf="@id/hufflepuff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gryffindor"
         app:srcCompat="@drawable/ravenclaw"
         tools:layout_editor_absoluteX="53dp"
         tools:layout_editor_absoluteY="280dp" />
 
     <ImageView
         android:id="@+id/hufflepuff"
-        app:layout_constraintTop_toBottomOf="@id/slytherin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/ravenclaw"
-        android:padding="10dp"
         android:layout_width="210dp"
         android:layout_height="210dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ravenclaw"
+        app:layout_constraintTop_toBottomOf="@id/slytherin"
         app:srcCompat="@drawable/hufflepuff" />
 
     <Button
@@ -71,75 +71,79 @@
         android:id="@+id/sub5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/hufflepuff"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="60dp"
-        android:text="@string/sub5" />
+        android:text="@string/sub5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hufflepuff" />
 
     <Button
         android:id="@+id/add10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/add5"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="60dp"
-        android:text="@string/add10" />
+        android:layout_marginTop="20dp"
+        android:text="@string/add10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add5" />
 
     <Button
         android:id="@+id/sub10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/sub5"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="60dp"
-        android:text="@string/sub10" />
+        android:text="@string/sub10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sub5" />
 
     <TextView
         android:id="@+id/gPoints"
+        style="@style/Widget.housePoints.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/gPoints"
         android:textColor="#fec300"
-        app:layout_constraintStart_toStartOf="@id/gryffindor"
+        app:layout_constraintBottom_toBottomOf="@id/gryffindor"
         app:layout_constraintEnd_toEndOf="@id/gryffindor"
-        app:layout_constraintTop_toTopOf="@id/gryffindor"
-        app:layout_constraintBottom_toBottomOf="@id/gryffindor"/>
+        app:layout_constraintStart_toStartOf="@id/gryffindor"
+        app:layout_constraintTop_toTopOf="@id/gryffindor" />
 
     <TextView
         android:id="@+id/sPoints"
+        style="@style/Widget.housePoints.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sPoints"
-        app:layout_constraintStart_toStartOf="@id/slytherin"
-        app:layout_constraintTop_toTopOf="@id/slytherin"
+        android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="@id/slytherin"
         app:layout_constraintEnd_toEndOf="@id/slytherin"
-        android:textColor="#ffffff"/>
+        app:layout_constraintStart_toStartOf="@id/slytherin"
+        app:layout_constraintTop_toTopOf="@id/slytherin" />
 
     <TextView
         android:id="@+id/rPoints"
+        style="@style/Widget.housePoints.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/rPoints"
-        app:layout_constraintTop_toTopOf="@id/ravenclaw"
-        app:layout_constraintStart_toStartOf="@id/ravenclaw"
-        app:layout_constraintEnd_toEndOf="@id/ravenclaw"
+        android:textColor="#efa83c"
         app:layout_constraintBottom_toBottomOf="@id/ravenclaw"
-        android:textColor="#efa83c"/>
+        app:layout_constraintEnd_toEndOf="@id/ravenclaw"
+        app:layout_constraintStart_toStartOf="@id/ravenclaw"
+        app:layout_constraintTop_toTopOf="@id/ravenclaw" />
 
     <TextView
         android:id="@+id/hPoints"
+        style="@style/Widget.housePoints.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hPoints"
-        app:layout_constraintTop_toTopOf="@id/hufflepuff"
-        app:layout_constraintStart_toStartOf="@id/hufflepuff"
-        app:layout_constraintEnd_toEndOf="@id/hufflepuff"
+        android:textColor="#e6bc0a"
         app:layout_constraintBottom_toBottomOf="@id/hufflepuff"
-        android:textColor="#e6bc0a"/>
+        app:layout_constraintEnd_toEndOf="@id/hufflepuff"
+        app:layout_constraintStart_toStartOf="@id/hufflepuff"
+        app:layout_constraintTop_toTopOf="@id/hufflepuff" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
