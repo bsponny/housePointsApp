@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">House Points</string>
+    <string name="housePointsCalc">Hogwarts House Points</string>
+    <string name="add5">+5</string>
+    <string name="sub5">-5</string>
+    <string name="add10">+10</string>
+    <string name="sub10">-10</string>
+    <string name="gPoints">gPoints</string>
+    <string name="sPoints">sPoints</string>
+    <string name="rPoints">rPoints</string>
+    <string name="hPoints">hPoints</string>
+</resources>
